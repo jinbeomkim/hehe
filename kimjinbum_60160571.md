@@ -143,6 +143,12 @@ TDV <- TD %>%
   group_by(date) %>% 
   summarise(D_M=mean(total))
 
+
+
+
+
+
+
 TSV <- TS %>% 
   filter(job %in% c("o","p","q","u","v","w")) %>%    #c()에 해당하는 직종의 시간별 구직 평균치를 구한다.
   group_by(date) %>% 
